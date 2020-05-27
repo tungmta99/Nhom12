@@ -1,0 +1,11 @@
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\bin\Debug\AppQuanlyKho_PM1.exe.config
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\bin\Debug\AppQuanlyKho_PM1.exe
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\bin\Debug\AppQuanlyKho_PM1.pdb
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.csprojAssemblyReference.cache
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.Form1.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.Properties.Resources.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.csproj.GenerateResource.cache
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.csproj.CoreCompileInputs.cache
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.exe
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.pdb
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormSupply.resources
