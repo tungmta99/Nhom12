@@ -11,20 +11,20 @@ using AppQuanlyKho_PM1.DAO;
 
 namespace AppQuanlyKho_PM1
 {
-    public partial class FormSupply : Form
+    public partial class FormCustomer : Form
     {
         BindingSource pList = new BindingSource();
-        public FormSupply()
+        public FormCustomer()
         {
 
             InitializeComponent();
 
-            LoadSupply();
+            LoadCustomer();
         }
 
-        void LoadSupply()
+        void LoadCustomer()
         {
-            string query = "select * from Supply";
+            string query = "select * from Customer";
 
             dtgvSupplier.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
@@ -33,6 +33,6 @@ namespace AppQuanlyKho_PM1
             pList.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
 
-        }
+        }   
     }
 }

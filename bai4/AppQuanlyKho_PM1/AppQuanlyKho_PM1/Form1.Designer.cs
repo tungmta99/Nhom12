@@ -95,18 +95,21 @@
             this.vâtTưToolStripMenuItem.Name = "vâtTưToolStripMenuItem";
             this.vâtTưToolStripMenuItem.Size = new System.Drawing.Size(65, 23);
             this.vâtTưToolStripMenuItem.Text = "Vật tư ";
+            this.vâtTưToolStripMenuItem.Click += new System.EventHandler(this.vâtTưToolStripMenuItem_Click);
             // 
             // đơnViToolStripMenuItem
             // 
             this.đơnViToolStripMenuItem.Name = "đơnViToolStripMenuItem";
             this.đơnViToolStripMenuItem.Size = new System.Drawing.Size(68, 23);
             this.đơnViToolStripMenuItem.Text = "Đơn vị ";
+            this.đơnViToolStripMenuItem.Click += new System.EventHandler(this.đơnViToolStripMenuItem_Click);
             // 
             // nhaCungCâpToolStripMenuItem
             // 
             this.nhaCungCâpToolStripMenuItem.Name = "nhaCungCâpToolStripMenuItem";
             this.nhaCungCâpToolStripMenuItem.Size = new System.Drawing.Size(112, 23);
             this.nhaCungCâpToolStripMenuItem.Text = "Nhà cung cấp";
+            this.nhaCungCâpToolStripMenuItem.Click += new System.EventHandler(this.nhaCungCâpToolStripMenuItem_Click);
             // 
             // khachHangToolStripMenuItem
             // 
@@ -116,6 +119,7 @@
             this.khachHangToolStripMenuItem.RightToLeftAutoMirrorImage = true;
             this.khachHangToolStripMenuItem.Size = new System.Drawing.Size(102, 23);
             this.khachHangToolStripMenuItem.Text = "Khách hàng ";
+            this.khachHangToolStripMenuItem.Click += new System.EventHandler(this.khachHangToolStripMenuItem_Click);
             // 
             // ngươiDungToolStripMenuItem
             // 
@@ -123,6 +127,7 @@
             this.ngươiDungToolStripMenuItem.Name = "ngươiDungToolStripMenuItem";
             this.ngươiDungToolStripMenuItem.Size = new System.Drawing.Size(101, 23);
             this.ngươiDungToolStripMenuItem.Text = "Người dùng";
+            this.ngươiDungToolStripMenuItem.Click += new System.EventHandler(this.ngươiDungToolStripMenuItem_Click);
             // 
             // label1
             // 

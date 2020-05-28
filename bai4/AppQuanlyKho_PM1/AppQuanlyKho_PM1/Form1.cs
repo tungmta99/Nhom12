@@ -54,5 +54,35 @@ namespace AppQuanlyKho_PM1
 
             KhoList.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
+
+        private void đơnViToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUnit f = new FormUnit();
+            f.Show();
+        }
+
+        private void nhaCungCâpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSupplier f = new FormSupplier();
+            f.Show();
+        }
+
+        private void khachHangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCustomer f = new FormCustomer();
+            f.Show();
+        }
+
+        private void vâtTưToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSupply f = new FormSupply();
+            f.Show();
+        }
+
+        private void ngươiDungToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUser f = new FormUser();
+            f.Show();
+        }
     }
 }

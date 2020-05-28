@@ -9,3 +9,7 @@ C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanly
 C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.exe
 C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.pdb
 C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormSupply.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormUnit.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormSupplier.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormCustomer.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormUser.resources
