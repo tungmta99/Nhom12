@@ -18,12 +18,14 @@ namespace AppQuanlyKho_PM1
         {
             InitializeComponent();
 
-            LoadKho();
+            LoadUnit();
+
+            AddBindingUnit();
         }
 
-        void LoadKho()
+        void LoadUnit()
         {
-            string query = "select ID, DisplayName as [Đơnvị] from Unit";
+            string query = "select ID, DisplayName as [Đơn vị] from Unit";
 
             dtgvUnit.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
@@ -33,6 +35,12 @@ namespace AppQuanlyKho_PM1
 
         }
 
+        void AddBindingUnit()
+        {
+            textBoxUnitName.DataBindings.Add(new Binding("Text", dtgvUnit.DataSource, "Đơn vị", true, DataSourceUpdateMode.Never));
+            labelIdUnit.DataBindings.Add(new Binding("Text", dtgvUnit.DataSource, "ID", true, DataSourceUpdateMode.Never));
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -40,6 +48,78 @@ namespace AppQuanlyKho_PM1
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có thật sự muốn xóa?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.Cancel)
+            {
+                int ID  = Convert.ToInt32(labelIdUnit.Text);
+
+
+                if (UnitDAO.Instance.DeleteUnit(ID))
+                {
+                    MessageBox.Show("Xóa thành công");
+                    LoadUnit();
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Có lỗi khi xóa");
+                }
+            }
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            string unitName = textBoxUnitName.Text;
+            int id = Convert.ToInt32(labelIdUnit.Text);
+
+
+            if (UnitDAO.Instance.UpdateUnit(unitName,id))
+            {
+                MessageBox.Show("Sửa thành công");
+
+                LoadUnit();
+            }
+
+            else
+            {
+                MessageBox.Show("Có lỗi khi sửa");
+            }
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void buttonAddUnit_Click(object sender, EventArgs e)
+        {
+            string unitName = textBoxUnitName.Text;
+            
+
+            if (UnitDAO.Instance.InsertUnit(unitName))
+            {
+                MessageBox.Show("Thêm thành công");
+
+                LoadUnit();
+            }
+
+            else
+            {
+                MessageBox.Show("Có lỗi khi thêm");
+            }
+        }
+
+       
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            
 
         }
     }

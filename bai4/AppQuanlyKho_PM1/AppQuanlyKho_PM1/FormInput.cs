@@ -11,30 +11,26 @@ using AppQuanlyKho_PM1.DAO;
 
 namespace AppQuanlyKho_PM1
 {
-    public partial class FormUser : Form
+    public partial class FormInput : Form
     {
         BindingSource pList = new BindingSource();
-        public FormUser()
+        public FormInput()
         {
             InitializeComponent();
 
-            LoadUser();
-
+            LoadInputInfo();
         }
 
-        void LoadUser()
+        void LoadInputInfo()
         {
-            string query = "select * from Users";
+            string query = String.Format("select * from InputInfo",comboBoxInputID.Text);
 
-            dtgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgvInputInfor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            dtgvUser.DataSource = pList;
+            dtgvInputInfor.DataSource = pList;
 
             pList.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
-        }
-        private void label5_Click(object sender, EventArgs e)
-        {
 
         }
     }

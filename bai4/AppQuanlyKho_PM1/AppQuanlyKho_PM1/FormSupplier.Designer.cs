@@ -271,17 +271,23 @@
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button4.CausesValidation = false;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Location = new System.Drawing.Point(9, 335);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(325, 23);
             this.button4.TabIndex = 8;
             this.button4.Text = "Thêm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // FormSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1170, 456);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);

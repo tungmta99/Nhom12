@@ -63,12 +63,15 @@
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button4.Location = new System.Drawing.Point(11, 340);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(325, 23);
             this.button4.TabIndex = 20;
             this.button4.Text = "Thêm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
             // 

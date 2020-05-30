@@ -84,5 +84,17 @@ namespace AppQuanlyKho_PM1
             FormUser f = new FormUser();
             f.Show();
         }
+
+        private void nhâpKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormInput f = new FormInput();
+            f.Show();
+        }
+
+        private void xuâtKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormOutput f = new FormOutput();
+            f.Show();
+        }
     }
 }

@@ -83,12 +83,14 @@
             this.nhâpKhoToolStripMenuItem.Name = "nhâpKhoToolStripMenuItem";
             this.nhâpKhoToolStripMenuItem.Size = new System.Drawing.Size(86, 23);
             this.nhâpKhoToolStripMenuItem.Text = "Nhập kho";
+            this.nhâpKhoToolStripMenuItem.Click += new System.EventHandler(this.nhâpKhoToolStripMenuItem_Click);
             // 
             // xuâtKhoToolStripMenuItem
             // 
             this.xuâtKhoToolStripMenuItem.Name = "xuâtKhoToolStripMenuItem";
             this.xuâtKhoToolStripMenuItem.Size = new System.Drawing.Size(80, 23);
             this.xuâtKhoToolStripMenuItem.Text = "Xuất kho";
+            this.xuâtKhoToolStripMenuItem.Click += new System.EventHandler(this.xuâtKhoToolStripMenuItem_Click);
             // 
             // vâtTưToolStripMenuItem
             // 
@@ -152,16 +154,17 @@
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSearch.Location = new System.Drawing.Point(371, 197);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(340, 24);
+            this.textBoxSearch.Size = new System.Drawing.Size(340, 26);
             this.textBoxSearch.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button1.Location = new System.Drawing.Point(717, 195);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 29);
@@ -172,13 +175,15 @@
             // 
             // buttonRefresh
             // 
-            this.buttonRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonRefresh.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonRefresh.Location = new System.Drawing.Point(12, 195);
             this.buttonRefresh.Name = "buttonRefresh";
             this.buttonRefresh.Size = new System.Drawing.Size(106, 29);
             this.buttonRefresh.TabIndex = 5;
             this.buttonRefresh.Text = "Refresh";
-            this.buttonRefresh.UseVisualStyleBackColor = true;
+            this.buttonRefresh.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -280,6 +285,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(837, 611);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);

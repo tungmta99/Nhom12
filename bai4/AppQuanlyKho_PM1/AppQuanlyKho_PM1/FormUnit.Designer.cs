@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxUnitName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonAddUnit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.textBoxSreachUnit = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.dtgvUnit = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.labelIdUnit = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvUnit)).BeginInit();
@@ -47,14 +48,23 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textBoxUnitName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.buttonAddUnit);
             this.panel1.Location = new System.Drawing.Point(114, 104);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(336, 28);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // textBoxUnitName
+            // 
+            this.textBoxUnitName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUnitName.Location = new System.Drawing.Point(57, 2);
+            this.textBoxUnitName.Name = "textBoxUnitName";
+            this.textBoxUnitName.Size = new System.Drawing.Size(208, 22);
+            this.textBoxUnitName.TabIndex = 1;
+            this.textBoxUnitName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -66,40 +76,44 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Đơn vị:";
             // 
-            // textBox1
+            // buttonAddUnit
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(57, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.buttonAddUnit.BackColor = System.Drawing.Color.RoyalBlue;
+            this.buttonAddUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddUnit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonAddUnit.Location = new System.Drawing.Point(268, 1);
+            this.buttonAddUnit.Name = "buttonAddUnit";
+            this.buttonAddUnit.Size = new System.Drawing.Size(65, 23);
+            this.buttonAddUnit.TabIndex = 3;
+            this.buttonAddUnit.Text = "Thêm";
+            this.buttonAddUnit.UseVisualStyleBackColor = false;
+            this.buttonAddUnit.Click += new System.EventHandler(this.buttonAddUnit_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.buttonSearch);
+            this.panel2.Controls.Add(this.textBoxSreachUnit);
             this.panel2.Location = new System.Drawing.Point(120, 70);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(330, 28);
             this.panel2.TabIndex = 1;
             // 
-            // textBox2
+            // buttonSearch
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(3, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 22);
-            this.textBox2.TabIndex = 1;
+            this.buttonSearch.Location = new System.Drawing.Point(262, 2);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(65, 23);
+            this.buttonSearch.TabIndex = 2;
+            this.buttonSearch.Text = "Tìm";
+            this.buttonSearch.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // textBoxSreachUnit
             // 
-            this.button1.Location = new System.Drawing.Point(262, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tìm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBoxSreachUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSreachUnit.Location = new System.Drawing.Point(51, 3);
+            this.textBoxSreachUnit.Name = "textBoxSreachUnit";
+            this.textBoxSreachUnit.Size = new System.Drawing.Size(208, 22);
+            this.textBoxSreachUnit.TabIndex = 1;
             // 
             // label2
             // 
@@ -111,15 +125,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Đơn vị";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(268, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // dtgvUnit
             // 
             this.dtgvUnit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -128,41 +133,57 @@
             this.dtgvUnit.Size = new System.Drawing.Size(436, 250);
             this.dtgvUnit.TabIndex = 4;
             // 
-            // button3
+            // buttonDelete
             // 
-            this.button3.Location = new System.Drawing.Point(213, 394);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonDelete.Location = new System.Drawing.Point(213, 394);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelete.TabIndex = 5;
+            this.buttonDelete.Text = "Xóa";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // button4
+            // buttonEdit
             // 
-            this.button4.Location = new System.Drawing.Point(294, 394);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Sửa ";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonEdit.Location = new System.Drawing.Point(294, 394);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdit.TabIndex = 6;
+            this.buttonEdit.Text = "Sửa ";
+            this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
-            // button5
+            // buttonExit
             // 
-            this.button5.Location = new System.Drawing.Point(375, 394);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Thoát";
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonExit.Location = new System.Drawing.Point(375, 394);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.TabIndex = 7;
+            this.buttonExit.Text = "Thoát";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // labelIdUnit
+            // 
+            this.labelIdUnit.AutoSize = true;
+            this.labelIdUnit.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.labelIdUnit.Location = new System.Drawing.Point(21, 111);
+            this.labelIdUnit.Name = "labelIdUnit";
+            this.labelIdUnit.Size = new System.Drawing.Size(18, 13);
+            this.labelIdUnit.TabIndex = 8;
+            this.labelIdUnit.Text = "ID";
             // 
             // FormUnit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(467, 435);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.labelIdUnit);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.dtgvUnit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -183,16 +204,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxUnitName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.TextBox textBoxSreachUnit;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonAddUnit;
         private System.Windows.Forms.DataGridView dtgvUnit;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Label labelIdUnit;
     }
 }
