@@ -106,6 +106,7 @@
             this.buttonSearch.TabIndex = 2;
             this.buttonSearch.Text = "Tìm";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // textBoxSreachUnit
             // 

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppQuanlyKho_PM1.DAO;
+using AppQuanlyKho_PM1.DTO;
 
 namespace AppQuanlyKho_PM1
 {
@@ -20,11 +21,15 @@ namespace AppQuanlyKho_PM1
 
             LoadUser();
 
+            LoadRoleList();
+
+            AddBindingUser();
+
         }
 
         void LoadUser()
         {
-            string query = "select * from Users";
+            string query = "select Users.ID as [ID],Users.DisplayName as[Tên hiển thị],UserName as[Tên],Password as[Mật khẩu],UserRole.DisplayName as [Quyền] from Users,UserRole where Users.IdRole=UserRole.ID";
 
             dtgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
@@ -33,9 +38,44 @@ namespace AppQuanlyKho_PM1
             pList.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
         }
+
+        void LoadRoleList()
+        {
+            List<Role> listRole = RoleDAO.Instance.GetListRole();
+            comboBoxRole.DataSource = listRole;
+            comboBoxRole.DisplayMember = "RoleName";
+        }
+
+        void AddBindingUser()
+        {
+            textBoxUserDisplayName.DataBindings.Add(new Binding("Text", dtgvUser.DataSource, "Tên hiển thị", true, DataSourceUpdateMode.Never));
+            textBoxUserName.DataBindings.Add(new Binding("Text", dtgvUser.DataSource, "Tên", true, DataSourceUpdateMode.Never));
+            textBoxPassWord.DataBindings.Add(new Binding("Text", dtgvUser.DataSource, "Mật khẩu", true, DataSourceUpdateMode.Never));
+            comboBoxRole.DataBindings.Add(new Binding("Text", dtgvUser.DataSource, "Quyền", true, DataSourceUpdateMode.Never));
+        }
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

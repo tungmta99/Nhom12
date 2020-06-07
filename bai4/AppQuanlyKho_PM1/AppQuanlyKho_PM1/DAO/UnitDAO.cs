@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppQuanlyKho_PM1.DTO;
 
 namespace AppQuanlyKho_PM1.DAO
 {
@@ -20,9 +22,25 @@ namespace AppQuanlyKho_PM1.DAO
 
         private UnitDAO() { }
 
+        public List<Unit> GetListUnit()
+        {
+            List<Unit> UnitList = new List<Unit>();
+
+            string query = "select * from Unit";
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Unit unit = new Unit(item);
+                UnitList.Add(unit);
+            }
+
+            return UnitList;
+        }
+
         public bool InsertUnit(string unitName)
         {
-
             string query = string.Format("insert into Unit values (N'{0}')",unitName);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
 

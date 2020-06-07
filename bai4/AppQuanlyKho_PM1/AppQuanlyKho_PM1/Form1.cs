@@ -23,7 +23,7 @@ namespace AppQuanlyKho_PM1
 
         void LoadKho()
         {
-            string query = "select * from KhoView";
+            string query = "select * from KhoView where [Số lượng tồn] >0";
 
             dtgvStorage.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 

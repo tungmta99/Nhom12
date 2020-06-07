@@ -119,8 +119,19 @@ namespace AppQuanlyKho_PM1
         private void button3_Click(object sender, EventArgs e)
         {
 
-            
+        }
 
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            string keyword = textBoxSreachUnit.Text;
+
+            string query = string.Format("select ID, DisplayName as [Đơn vị] from Unit where DisplayName like N'%{0}%'", keyword);
+
+            dtgvUnit.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dtgvUnit.DataSource = UnitList;
+
+            UnitList.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }

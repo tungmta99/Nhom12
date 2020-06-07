@@ -20,7 +20,7 @@ namespace AppQuanlyKho_PM1.DAO
 
         private DataProvider() { }
 
-        private string connectionSTR = "Data Source=DESKTOP-T34KDKP;Initial Catalog=QuanLyKho_PM1;Integrated Security=True";
+        private string connectionSTR = "Data Source=DESKTOP-T34KDKP;Initial Catalog=QuanLyKho_PM2;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
 
@@ -95,7 +95,7 @@ namespace AppQuanlyKho_PM1.DAO
         public object ExecuteScalar(string query, object[] parameter = null)
         {
 
-            object data = 0;
+            object data ;
 
             using (SqlConnection connection = new SqlConnection(connectionSTR))
 
@@ -130,6 +130,8 @@ namespace AppQuanlyKho_PM1.DAO
         {
             throw new NotImplementedException();
         }
+
+
 
     }
 }
