@@ -13,5 +13,5 @@ C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanly
 C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormSupplier.resources
 C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormCustomer.resources
 C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormUser.resources
-C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormInput.resources
-C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormOutput.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormInputInfo.resources
+C:\Users\Bong\source\repos\AppQuanlyKho_PM1\AppQuanlyKho_PM1\obj\Debug\AppQuanlyKho_PM1.FormOutputInfo.resources
