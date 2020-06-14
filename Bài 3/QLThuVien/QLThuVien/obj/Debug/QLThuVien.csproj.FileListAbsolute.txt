@@ -1,0 +1,15 @@
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\bin\Debug\QLThuVien.exe.config
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\bin\Debug\QLThuVien.exe
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\bin\Debug\QLThuVien.pdb
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csprojAssemblyReference.cache
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.Book.resources
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.BorrowAndGiveBack.resources
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.Home.resources
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.InforUser.resources
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.LibraryCard.resources
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.Login.resources
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.Properties.Resources.resources
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csproj.GenerateResource.cache
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.csproj.CoreCompileInputs.cache
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.exe
+C:\Users\manof\source\repos\QLThuVien\QLThuVien\obj\Debug\QLThuVien.pdb

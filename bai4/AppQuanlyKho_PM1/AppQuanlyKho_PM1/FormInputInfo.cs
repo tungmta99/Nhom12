@@ -40,6 +40,8 @@ namespace AppQuanlyKho_PM1
 
             pList.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
+            string query2 = "select sum(Quantity) from InputInfo";
+            labelSumInput.Text = DataProvider.Instance.ExecuteScalar(query2).ToString();
 
         }
 
@@ -170,12 +172,14 @@ namespace AppQuanlyKho_PM1
 
         private void label11_MouseClick(object sender, MouseEventArgs e)
         {
-
+            FormInput f = new FormInput();
+            f.Show();
         }
 
         private void panel9_Click(object sender, EventArgs e)
         {
-
+            FormInput f = new FormInput();
+            f.Show();
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelIDold = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.textBoxInputInfoID = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -42,9 +43,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBoxStatus = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.textBoxOutputPrice = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBoxInputPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,12 +62,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.labelIDold = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvInputInfor)).BeginInit();
             this.panel7.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -99,7 +95,6 @@
             this.panel1.Controls.Add(this.buttonEdit);
             this.panel1.Controls.Add(this.dtgvInputInfor);
             this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -108,11 +103,21 @@
             this.panel1.Size = new System.Drawing.Size(1146, 416);
             this.panel1.TabIndex = 16;
             // 
+            // labelIDold
+            // 
+            this.labelIDold.AutoSize = true;
+            this.labelIDold.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.labelIDold.Location = new System.Drawing.Point(9, 297);
+            this.labelIDold.Name = "labelIDold";
+            this.labelIDold.Size = new System.Drawing.Size(50, 13);
+            this.labelIDold.TabIndex = 34;
+            this.labelIDold.Text = "loading...";
+            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.textBoxInputInfoID);
             this.panel10.Controls.Add(this.label13);
-            this.panel10.Location = new System.Drawing.Point(3, 42);
+            this.panel10.Location = new System.Drawing.Point(12, 88);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(328, 33);
             this.panel10.TabIndex = 33;
@@ -139,7 +144,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(43, 3);
+            this.label7.Location = new System.Drawing.Point(42, 34);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(243, 20);
             this.label7.TabIndex = 32;
@@ -202,7 +207,7 @@
             // 
             this.panel7.Controls.Add(this.textBoxStatus);
             this.panel7.Controls.Add(this.label8);
-            this.panel7.Location = new System.Drawing.Point(2, 237);
+            this.panel7.Location = new System.Drawing.Point(11, 244);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(328, 33);
             this.panel7.TabIndex = 23;
@@ -225,38 +230,11 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Trạng thái:";
             // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.textBoxOutputPrice);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Location = new System.Drawing.Point(2, 198);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(328, 33);
-            this.panel5.TabIndex = 24;
-            // 
-            // textBoxOutputPrice
-            // 
-            this.textBoxOutputPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxOutputPrice.Location = new System.Drawing.Point(106, 4);
-            this.textBoxOutputPrice.Name = "textBoxOutputPrice";
-            this.textBoxOutputPrice.Size = new System.Drawing.Size(219, 22);
-            this.textBoxOutputPrice.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 16);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Giá bán:";
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.textBoxInputPrice);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(2, 159);
+            this.panel4.Location = new System.Drawing.Point(11, 205);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(328, 33);
             this.panel4.TabIndex = 25;
@@ -283,7 +261,7 @@
             // 
             this.panel3.Controls.Add(this.textBoxQuantity);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(2, 120);
+            this.panel3.Location = new System.Drawing.Point(11, 166);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(328, 33);
             this.panel3.TabIndex = 26;
@@ -310,7 +288,7 @@
             // 
             this.panel2.Controls.Add(this.comboBoxSupplyName);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(2, 81);
+            this.panel2.Location = new System.Drawing.Point(11, 127);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(328, 33);
             this.panel2.TabIndex = 22;
@@ -442,27 +420,18 @@
             this.label11.Text = "Tạo hóa đơn mới";
             this.label11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label11_MouseClick);
             // 
-            // labelIDold
-            // 
-            this.labelIDold.AutoSize = true;
-            this.labelIDold.Location = new System.Drawing.Point(9, 297);
-            this.labelIDold.Name = "labelIDold";
-            this.labelIDold.Size = new System.Drawing.Size(50, 13);
-            this.labelIDold.TabIndex = 34;
-            this.labelIDold.Text = "loading...";
-            // 
-            // FormInput
+            // FormInputInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1179, 566);
+            this.ClientSize = new System.Drawing.Size(1178, 566);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
-            this.Name = "FormInput";
+            this.Name = "FormInputInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormInput";
             this.panel1.ResumeLayout(false);
@@ -472,8 +441,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvInputInfor)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -503,9 +470,6 @@
         private System.Windows.Forms.DataGridView dtgvInputInfor;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBoxOutputPrice;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBoxInputPrice;
         private System.Windows.Forms.Label label5;

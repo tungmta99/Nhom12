@@ -36,9 +36,10 @@
             this.comboBoxOutputID = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelSumOuput = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelIDold = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.comboBoxCustomer = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.comboBoxSupplyName = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.labelIDold = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -88,6 +88,7 @@
             this.panel9.Size = new System.Drawing.Size(245, 75);
             this.panel9.TabIndex = 24;
             this.panel9.Click += new System.EventHandler(this.panel9_Click);
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // label11
             // 
@@ -98,6 +99,7 @@
             this.label11.Size = new System.Drawing.Size(210, 29);
             this.label11.TabIndex = 0;
             this.label11.Text = "Tạo hóa đơn mới";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // panel8
             // 
@@ -155,7 +157,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.labelSumOuput);
             this.panel6.Controls.Add(this.label1);
             this.panel6.ForeColor = System.Drawing.Color.Maroon;
             this.panel6.Location = new System.Drawing.Point(17, 58);
@@ -163,15 +165,15 @@
             this.panel6.Size = new System.Drawing.Size(442, 75);
             this.panel6.TabIndex = 22;
             // 
-            // label9
+            // labelSumOuput
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(239, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 29);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "loading...";
+            this.labelSumOuput.AutoSize = true;
+            this.labelSumOuput.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSumOuput.Location = new System.Drawing.Point(239, 21);
+            this.labelSumOuput.Name = "labelSumOuput";
+            this.labelSumOuput.Size = new System.Drawing.Size(121, 29);
+            this.labelSumOuput.TabIndex = 1;
+            this.labelSumOuput.Text = "loading...";
             // 
             // label1
             // 
@@ -202,6 +204,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1146, 416);
             this.panel1.TabIndex = 21;
+            // 
+            // labelIDold
+            // 
+            this.labelIDold.AutoSize = true;
+            this.labelIDold.ForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.labelIDold.Location = new System.Drawing.Point(8, 307);
+            this.labelIDold.Name = "labelIDold";
+            this.labelIDold.Size = new System.Drawing.Size(50, 13);
+            this.labelIDold.TabIndex = 4;
+            this.labelIDold.Text = "loading...";
             // 
             // panel11
             // 
@@ -317,6 +329,7 @@
             this.dtgvOutputInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvOutputInfo.Location = new System.Drawing.Point(350, 3);
             this.dtgvOutputInfo.Name = "dtgvOutputInfo";
+            this.dtgvOutputInfo.RowHeadersWidth = 51;
             this.dtgvOutputInfo.Size = new System.Drawing.Size(793, 357);
             this.dtgvOutputInfo.TabIndex = 27;
             // 
@@ -439,27 +452,19 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Xử lý xuất kho";
             // 
-            // labelIDold
-            // 
-            this.labelIDold.AutoSize = true;
-            this.labelIDold.Location = new System.Drawing.Point(8, 307);
-            this.labelIDold.Name = "labelIDold";
-            this.labelIDold.Size = new System.Drawing.Size(50, 13);
-            this.labelIDold.TabIndex = 4;
-            this.labelIDold.Text = "loading...";
-            // 
-            // FormOutput
+            // FormOutputInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1181, 566);
+            this.ClientSize = new System.Drawing.Size(1178, 566);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
-            this.Name = "FormOutput";
+            this.Name = "FormOutputInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOutput";
             this.panel9.ResumeLayout(false);
@@ -498,7 +503,7 @@
         private System.Windows.Forms.ComboBox comboBoxOutputID;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelSumOuput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel11;

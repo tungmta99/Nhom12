@@ -39,7 +39,10 @@ namespace AppQuanlyKho_PM1
 
             dtgvOutputInfo.DataSource = pList;
 
-            pList.DataSource=DataProvider.Instance.ExecuteQuery(query);           
+            pList.DataSource=DataProvider.Instance.ExecuteQuery(query);
+
+            string query2 = "select sum(Quantity) from OutputInfo";
+            labelSumOuput.Text = DataProvider.Instance.ExecuteScalar(query2).ToString();
         }
 
         void AddBindingOuputInfo()
@@ -160,7 +163,8 @@ namespace AppQuanlyKho_PM1
 
         private void panel9_Click(object sender, EventArgs e)
         {
-
+            FormOutput1 f = new FormOutput1();
+            f.Show();
         }
 
         private void comboBoxOutputID_SelectedIndexChanged(object sender, EventArgs e)
@@ -177,6 +181,17 @@ namespace AppQuanlyKho_PM1
         private void comboBoxOutputID_MouseClick(object sender, MouseEventArgs e)
         {
             LoadOutputList();
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            FormOutput1 f = new FormOutput1();
+            f.Show();
         }
     }
 }
